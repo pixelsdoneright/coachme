@@ -1,0 +1,135 @@
+<div ng-controller="ProfileCtrl">
+	<ng-include	src="'includes/navbar.html'"></ng-include>
+
+
+	<div class="profile-blk">
+		<div class="uk-width-3-4 uk-align-right">
+			<div class="profile-name">{{coach.name}}</div>
+		</div>
+	</div>
+	<div class="uk-container uk-container-center">
+		<div class="uk-grid">
+			<div class="uk-width-1-4">
+				<div class="profile-img">
+					<img ng-src="{{coach.image}}" alt="">
+				</div>
+			</div>
+		
+			<div class="uk-width-3-4">
+				
+				
+			</div>
+		</div>
+	</div>
+	<div class="">
+		<div class="uk-container uk-container-center">
+
+		<div class="uk-grid">
+			<div class="uk-width-1-4">
+				
+
+				<div class="profile-det">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, quidem!
+				</div>
+			</div>
+			<div class="uk-width-3-4">
+
+				<div class="profile-tabs">
+					<ul class="uk-list">
+						<li class="active"><a href="">Profile</a></li>
+						<li><a href="">Specialities</a></li>
+						<li><a href="">Reviews</a></li>
+						<li><a href="">Availability</a></li>
+					</ul>
+				</div>
+
+				<div class="tab-content">
+					<div class="profile-desc">
+						{{coach.about}}
+					</div>
+					<div class="reviews-blk">
+						<div class="each-review">
+							<div class="title">
+								<i class="fa fa-quote-left"></i>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime expedita nesciunt perferendis quas aperiam. Inventore veritatis repellendus explicabo magni id necessitatibus laudantium, illo, repellat rerum vitae voluptas provident sequi nemo.
+								<i class="fa fa-quote-right"></i>
+					
+								<div class="author-name">
+									by <span>Lorem ipsum dolor.</span>
+								</div>
+					
+							</div>
+						</div>
+					
+						<div class="each-review">
+							<div class="title">
+								<i class="fa fa-quote-left"></i>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eum ipsa qui, natus quisquam. Reprehenderit accusantium aut commodi amet molestias ullam, enim deleniti veritatis.
+								<i class="fa fa-quote-right"></i>
+					
+								<div class="author-name">
+									by <span>Lorem ipsum dolor.</span>
+								</div>
+					
+							</div>
+						</div>
+					
+						<div class="each-review">
+							<div class="title">
+								<i class="fa fa-quote-left"></i>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores accusamus eveniet maxime tempore consequatur vero at totam qui. Sed, quam illo molestiae. Officiis laudantium, eos impedit blanditiis odio, eum minima veniam vel.
+								<i class="fa fa-quote-right"></i>
+					
+								<div class="author-name">
+									by <span>Lorem ipsum dolor.</span>
+								</div>
+					
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+			
+		<!-- <div class="view-filter">
+			<a class="each-filter active">
+				Coaches
+			</a>
+			/
+			<a class="each-filter">
+				Camps
+			</a>
+		</div> -->
+
+		
+			
+			
+			<!-- <div class="search-results uk-clearfix">
+				<div class="uk-grid uk-grid-width-1-2">
+					<div ng-repeat="result in coaches">
+						<div class="each-result">
+							<div class="res-img">
+								<img ng-src="{{result.image}}" alt="">
+							</div>
+							<div class="res-name">
+								{{result.name}}
+								<p>
+									{{result.address}}
+								</p>
+								<p>
+									Experience: {{result.experience}} years, Expertise: {{result.expertise}}
+								</p>
+							</div>
+							<div class="res-details">
+								{{result.expertise}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			
+			
+		</div>
+	</div>
+</div>

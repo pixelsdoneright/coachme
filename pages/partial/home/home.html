@@ -1,0 +1,101 @@
+<div ng-controller="HomeCtrl">
+	<div class="hero uk-height-viewport">
+	    <!-- <img class="" src="img/hero.jpg" width="" height="" alt=""> -->
+	    <div class="uk-height-1-1 uk-vertical-align">
+	    	<div class="uk-vertical-align-middle">
+	    		<div class="search">
+	    			<div>Need a coach for <div class="herotxt">asdas</div> ?</div>
+	    			<form ng-submit="search(searchtext)">
+	    				<input type="text" ng-model="searchtext" class="uk-width-1-2" name="" id="" autofocus placeholder="your sport">
+	    			</form>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+
+	<!-- <div class="search-blk">
+		afsdadsf
+	</div> -->
+	<div class="works-blk">
+		<div class="uk-container uk-container-center">
+			<h2 class="header">
+				How it works
+				<p class="uk-width-2-3 uk-container-center">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam deserunt magni, earum cumque omnis rerum placeat nam reprehenderit saepe exercitationem.
+				</p>
+			</h2>
+
+			<div class="steps"  data-uk-scrollspy>
+				<div class="uk-grid uk-grid-width-1-2">
+						<div>
+							<div class="each-step uk-text-right">
+								<div class="step-header">
+									Step 1: Lorem ipsum.
+								</div>
+								<div class="step-content uk-width-1-2 uk-align-right">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores in, deserunt culpa totam, ut quaerat.
+								</div>
+							</div>
+						</div>
+						<div></div>
+						<div></div>
+						<div>
+							<div class="each-step">
+								<div class="step-header">
+									Step 2: Lorem ipsum dolor.
+								</div>
+								<div class="step-content uk-width-1-2">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim vel quos alias, placeat, incidunt laudantium.
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="each-step uk-text-right">
+								<div class="step-header">
+									Step 3: Lorem ipsum.
+								</div>
+								<div class="step-content uk-width-1-2 uk-align-right">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi provident natus minus, repudiandae distinctio modi.
+								</div>
+							</div>
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="top-categories">
+		<div class="uk-container uk-container-center uk-clearfix">
+			<h2 class="header">
+				Our most popular sports
+				<p class="uk-width-2-3 uk-container-center">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam deserunt magni, earum cumque omnis rerum placeat nam reprehenderit saepe exercitationem.
+				</p>
+			</h2>
+
+			<div class="category-blk">
+
+			<div class="uk-grid uk-grid-width-large-1-3 uk-grid-width-medium-1-2 uk-grid-width-small-1-1 uk-grid-match"  data-uk-grid-match>
+				<div ng-repeat="category in populars">
+					<a ng-href="#/search/{{category.sport}}" class="each-category">
+						<div class="main-blk">
+							{{category.sport}}
+						</div>
+						<div class="count">{{category.count}}</div>
+						<div class="subtext">
+							coaches
+						</div>
+						<div class="secondary-blk">
+							{{category.specialities}}
+						</div>
+					</a>
+				</div>
+			</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+	
+</div>

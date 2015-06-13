@@ -1,0 +1,84 @@
+<div ng-controller="SearchCtrl">
+	<ng-include	src="'includes/navbar.html'"></ng-include>
+	<div class="">
+		<div class="search-blk">
+			<input type="text" placeholder="Need coach for" ng-model="searchText" autofocus> in <input placeholder="location" type="text">
+		</div>
+		<div class="uk-container uk-container-center">
+			<div class="uk-width-5-6 uk-container-center">
+				<div>&nbsp;</div>
+				<h2 class="header">
+					{{searchText}}
+					<p class="uk-width-2-3 uk-container-center">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam deserunt magni, earum cumque omnis rerum placeat nam reprehenderit saepe exercitationem.
+					</p>
+				</h2>
+				
+				
+						<!-- <div class="uk-width-4-5 uk-container-center advanced"> -->
+				<div class="advanced uk-clearfix">
+					<div class="view-filter">
+						<a class="each-filter active">
+							Coaches
+						</a>
+						/
+						<a class="each-filter">
+							Camps
+						</a>
+					</div>
+					
+					<div class="sort-filter">
+						Sort by 
+						<ul class="uk-list">
+							<li><a href="">Rating</a></li>
+							<li><a href="">Experience</a></li>
+							<li><a href="">Alphabetically</a></li>
+							<li class="active"><a href="">Availability</a></li>
+						</ul>
+					</div>
+				</div>
+						<!-- </div> -->
+				
+				
+				<div class="search-results uk-clearfix uk-container-center">
+					<div class="uk-grid uk-grid-width-large-1-2 uk-grid-width-medium-1-1 uk-grid-width-small-1-1">
+						<div ng-repeat="result in coaches  | filter:searchText">
+							<a ng-href="#/profile/{{result.index}}" class="each-result">
+								<div class="res-name">
+									{{result.name}}
+									<div>
+										{{result.address}}
+									</div>
+								</div>
+								<div class="res-img">
+									<img ng-src="{{result.image}}" alt="">
+								</div>
+				
+								<div class="res-rating r{{result.rating}}">
+									<i class="uk-icon-star"></i>
+									<i class="uk-icon-star"></i>
+									<i class="uk-icon-star"></i>
+									<i class="uk-icon-star"></i>
+									<i class="uk-icon-star"></i>
+								</div>
+								
+								<div class="res-details">
+									<p>{{result.sport}}: {{result.expertise}}</p> 
+				
+									<p>
+										Experience: {{result.experience}} yrs, Age: {{result.age}} yrs
+									</p>
+									<p class="uk-text-truncate">
+										{{result.about}}
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>

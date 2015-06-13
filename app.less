@@ -1,0 +1,88 @@
+/*@accentColor:#E9E581;*/
+@accentColor:#0d0221;
+
+/*@primaryColor:#DE1B1B;*/
+@primaryColor:#cd533b;
+@baseColor:#2B2B2B;
+
+
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import "bower_components/uikit/less/uikit-variables.less";
+@import "bower_components/uikit/less/uikit.less";
+@import "bower_components/uikit/less/core/tab.less";
+
+/*@import "bower_components/font-awesome/less/font-awesome.less";*/
+/*@fa-font-path: "bower_components/font-awesome/fonts";*/
+
+/* Component LESS */
+@import "pages/pages.less";
+/* Add Component LESS Above */
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+/* Personal preference for BS modal.  The LESS below makes the backdrop white and
+   causes the modal to fade in rather than slide in. */
+//@modal-backdrop-bg: white;
+//.modal {
+//	&.fade {
+//		.transition(opacity .3s);
+//	}
+//	&.fade .modal-dialog {
+//		.translate(0,0);
+//	}
+//}
+
+
+body {
+	background: #F2F1ED;
+  	color: @baseColor;
+  	font-family: 'Open Sans', sans-serif;
+  	min-height: 80vh;
+}
+
+/*Navbar Styles*/
+
+.uk-navbar {
+	background-color: @baseColor;
+	height: 70px;
+	line-height: 70px;
+}
+.logo {
+	font-family: 'Lobster Two', cursive;
+	font-size: 34px;
+	color: #eee;
+	&:hover {
+		color:#fff;
+	}
+}
+
+.hrline {
+	/*margin-top: 2px;*/
+	border-bottom: 3px solid @primaryColor;
+}
+
+.uk-navbar-nav {
+	margin-left: 20px;
+	li  a {
+		line-height: 70px;
+		color: #aaa;
+		text-transform: uppercase;
+		font-size: 13px;
+		&:hover {
+			background: transparent;
+			color: #eeeeee;
+		}
+	}
+	li.active {
+		background: transparent;
+		a {
+			background: transparent;
+		}
+	}
+}
+.uk-navbar-nav.right {
+	float:right;
+}
+	

@@ -1,0 +1,144 @@
+.hero {
+	background: rgba(0,0,0,0.6);
+
+	background-image: url(img/hero.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	.uk-vertical-align-middle {
+		width: 100%;
+	}
+}
+
+.herotxt {
+	
+}
+
+.search {
+	width: 100%;
+	text-align: center;
+	input {
+		background: transparent;
+		font-size: 30px;
+		border-radius: 6px;
+		padding:8px;
+		outline: 0px;
+		color: #fff;
+		border:1px solid #ddd;
+		text-align: center;
+		font-weight: lighter;
+	}
+	> div {
+		color: #eee;
+		font-size: 23px;
+	}
+}
+
+.header {
+		text-align: center;
+		text-transform: capitalize;
+		margin: 10px 0px 20px;
+		font-weight: 300 !important;
+		p {
+			text-transform: none;
+			font-size: 16px;
+			margin:10px auto 30px !important;
+			color: #888;
+			line-height: 24px;
+		}
+	}
+
+.top-categories {
+	padding:80px 0px;
+	.header {
+		text-align: center;
+		margin: 10px 0px 20px;
+		font-weight: 300 !important;
+		p {
+			font-size: 16px;
+			margin:10px auto 30px !important;
+			color: #888;
+			line-height: 24px;
+		}
+	}
+}
+.each-category {
+	display: block;
+	position: relative;
+	min-height: 100px;
+	margin-bottom: 20px !important;
+	/*box-shadow: 0px 0px 3px #aaa;*/
+	background-color: #fff;
+	.main-blk {
+		background-color: @baseColor;
+		padding:10px 10px 10px 70px;
+		color: #ffffff;
+		text-transform: uppercase;
+		/*margin-bottom: 5px;*/
+		border-bottom: 5px solid #F2F1ED;
+	}
+	.count {
+		position: absolute;
+		background-color: @primaryColor;
+		width: 40px;
+		height:40px;
+		margin-top: -27px;
+		line-height: 40px;
+		text-align: center;
+		margin-left: 10px;
+		border-radius: 50%;
+		border:4px solid #F2F1ED;
+		font-size: 20px;
+		color: #fff;
+	}
+	.subtext {
+		position: absolute;
+		font-size: 10px;
+		margin-left: 12px;
+		color: @primaryColor;
+		margin-top: 20px;
+		text-transform: uppercase;
+	}
+	.secondary-blk {
+		
+		padding:10px 10px 10px 70px;
+		font-size: 12px;
+		height: 100%;
+		color:#999999;
+	}
+	&:hover {
+		text-decoration: none;
+		box-shadow: 0px 0px 3px #999;
+	}
+	
+}
+
+.works-blk {
+	background-color: #fff;
+	padding:80px 0px;
+	.header {
+		text-align: center;
+		margin: 10px 0px 20px;
+		font-weight: 300 !important;
+		margin-bottom: 40px;
+		p {
+			font-size: 16px;
+			margin:10px auto 30px !important;
+			color: #888;
+			line-height: 24px;
+		}
+	}
+}
+
+.steps {
+	margin:30px 0px;
+	position: relative;
+
+	.each-step {
+		.step-header {
+			font-size: 18px;
+			color: @primaryColor;
+			margin-bottom: 8px;
+		}
+	}
+}
